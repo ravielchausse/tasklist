@@ -1,5 +1,4 @@
 Template.lista.helpers({
-
 	tarefas : function() {
 		return Tarefas.find({});
 	},
@@ -11,7 +10,10 @@ Template.lista.helpers({
 
 Template.lista.events({
 	'click button': function (event, template) {
+		event.preventDefault();
+
 		let tarefa = this;
-		Tarefas.remove({_id: tarefa._id});
+		
+		Meteor.call('remove', tarefa._id);
 	}
 });
