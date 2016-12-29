@@ -1,0 +1,1 @@
+meteor add ian:accounts-ui-bootstrap-3

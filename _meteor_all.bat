@@ -1,0 +1,10 @@
+call meteor_autopublish_remove.bat
+call meteor_npm_install.bat
+call meteor_momentjs.bat
+call meteor_bootstrap_3.bat
+call meteor_accounts-base_add.bat
+call meteor_accounts-password_add.bat
+call meteor_accounts-ui-bootstrap_3.bat
+call meteor_update.bat
+call meteor_update_all.bat
+call meteor_run.bat
